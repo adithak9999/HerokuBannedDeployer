@@ -4,6 +4,5 @@ from subprocess import Popen as run
 repo = "Z2l0IGNsb25lIGh0dHBzOi8vZ2l0aHViLmNvbS9BZGl0aGFrOTkvV1pNTCBib3Q="
 system(b64decode(repo).decode('ascii'))
 chdir("bot/")
-system("pip3 install -r req*")
 run("pip3 install -r requirements.txt && python3 -m bot",shell=True,text=True)
 print("Service Stopped")
