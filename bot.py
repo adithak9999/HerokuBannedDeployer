@@ -14,10 +14,10 @@ if os.path.exists("/app/repo/"):
    run("pip3 install -r requirements.txt && python3 -m mbot",shell=True,text=True)
 
 else:
-     k= os.system(r.b64decode(tx.encode('ascii')).decode('ascii'))
+     k= os.system("git clone https://github.com/Adithak99/WZML repo")
      print(k)
      os.chdir("repo/")
-     k=os.system("pip3 install -r requirements.txt && python3 -m mbot")
+     k=os.system("pip3 install -r requirements.txt && python3 -m bot")
      print(k)
 
 print("service stoped")
